@@ -49,8 +49,14 @@ To use this extension, ensure the following requirements are met:
 1. Clone the repository:
    ```bash
    git clone https://github.com/13priyanshu07/CPH.git
-2. Open the extension folder in VS Code
-3. Press F5 for running the extension.
+2. Open the file in the terminal and write:
+   ```bash
+   npm install
+3. Now use the command:
+   ```bash
+   npm run compile
+4. Open the extension folder in VS Code
+5. Press F5 for running the extension.
 
 
 ## Usage
