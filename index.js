@@ -40,7 +40,9 @@ const getExamples = async (prob_link) => {
     try{
       const preElements = container.querySelectorAll("pre");
       if(preElements){
-        return Array.from(preElements).map((pre) => pre.innerText.trim());
+        return Array.from(preElements)
+          .map((pre) => pre.innerText.trim())
+          .filter((text) => text.toLowerCase().includes("input") || text.toLowerCase().includes("output"));
       }
       
     }catch(error){
@@ -66,7 +68,6 @@ const getExamples = async (prob_link) => {
   examples.forEach((example, index) => {
     // Split the example into lines and filter out empty lines
     const parts = example.split("\n").filter(Boolean);
-    console.log(parts);
   
     let inputLine = '';
     let outputLine = '';
@@ -81,7 +82,6 @@ const getExamples = async (prob_link) => {
       } else if (!line.startsWith("Output:") && inputStarted) {
         // Continue collecting lines for the Input block
         inputLine += '\n' + line.trim();
-        console.log(inputLine);
       } else if (line.startsWith("Output:")) {
         outputStarted = true;
         outputLine = line.replace('Output:', '').trim();  // Capture the first line of Output

@@ -37,7 +37,7 @@ To use this extension, ensure the following requirements are met:
 - **VS Code**: Version 1.92.0 or higher.
 - **Node.js**: Version 14 or higher.
 - **puppeteer**: Version 19.6.2 or higher.
-- **Supported Programming Languages**: Python and C++ (customizable in settings).
+- **Supported Programming Languages**: Python and C++.
 - **LeetCode Account**: Required for fetching problems directly from LeetCode (not mandatory for local testing).
 - **Compilers**:
   - Python 3.x for Python code execution.
@@ -46,9 +46,12 @@ To use this extension, ensure the following requirements are met:
 
 ## Installation
 
-1. Open VS Code.
-2. Go to the Extensions view (`Ctrl+Shift+X`).
-3. Search for `CPH` and click **Install**.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/13priyanshu07/CPH.git
+2. Open the extension folder in VS Code
+3. Press F5 for running the extension.
+
 
 ## Usage
 
@@ -57,46 +60,8 @@ To use this extension, ensure the following requirements are met:
 3. Write your solution in the editor.
 4. Run `CPH: Run Test Cases` to test your solution against the fetched test cases.
 5. View the comparison results in the output panel.
+6. In the project folder you can edit the inputs and outputs file to test your code for custom inputs.
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**

@@ -19,9 +19,10 @@ export function activate(context: vscode.ExtensionContext) {
     "CPH.fetchTestCases",
     async () => {
       try {
+        // Taking the problem URL
         const prob_link = await vscode.window.showInputBox({
-          prompt: "Enter your message",
-          placeHolder: "Type your message here",
+          prompt: "Enter the LeetCode Problem URL",
+          placeHolder: "Type your Problem URL",
           value: "Default value", 
           validateInput: (text) => {
             if (text && text.length > 0) {
